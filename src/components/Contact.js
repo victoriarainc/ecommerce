@@ -7,7 +7,9 @@ export default class Contact extends Component {
   render() {
     return (
       <div>
-        This is the Contact page.
+        <div>Facebook - /handmadecardsbyvi</div>
+        <div>Instagram - /handmadebyvi</div>
+        <div>Email - viography.raleigh@gmail.com</div>
       </div>
     );
   }

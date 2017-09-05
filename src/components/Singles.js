@@ -8,10 +8,12 @@ export default class Singles extends Component {
   render() {
     let items = singles.map((item) => {
       return(
-        <div>
-        {item.img}
-        {item.price}
-        {item.description}
+        <div className="itemwrapper">
+          <img src={item.img} />
+          <div className="itemdescription">
+            <div className="itemprice">{item.price}</div>
+            <div>{item.description}</div>
+          </div>
         </div>
       )
     })

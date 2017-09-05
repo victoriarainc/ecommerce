@@ -8,9 +8,11 @@ export default class BaseLayout extends Component {
   }
   render() {
     return (
-      <div>
+      <div id="baseLayout">
         <NavBar />
+        <div className="children">
         {this.props.children}
+        </div>
       </div>
     );
   }

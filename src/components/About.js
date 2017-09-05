@@ -7,7 +7,8 @@ export default class About extends Component {
   render() {
     return (
       <div>
-        This is the About page.
+        Handmade by vi is a local Raleigh company that believes in
+        reuse and recycling! 
       </div>
     );
   }

@@ -8,10 +8,12 @@ export default class Cards extends Component {
     render() {
       let items = greetingcards.map((item) => {
         return(
-          <div>
-          {item.img}
-          {item.price}
-          {item.description}
+          <div className="itemwrapper">
+            <img src={item.img} />
+            <div className="itemdescription">
+              <div className="itemprice">{item.price}</div>
+              <div>{item.description}</div>
+            </div>
           </div>
         )
       })
