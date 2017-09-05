@@ -1,4 +1,4 @@
-let cards = [
+let greetingcards = [
   {
     "id": "1",
     "type": "thanks",
@@ -20,7 +20,7 @@ let cards = [
   }
 ]
 
-let stationary = [
+let stationery = [
   {
     "id": "1",
     "type": "moglea",
@@ -64,4 +64,4 @@ let singles = [
   }
 ]
 
-export { singles, stationary, cards }
+export { singles, stationery, greetingcards }
