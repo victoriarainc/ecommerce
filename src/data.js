@@ -20,7 +20,7 @@ let cards = [
   }
 ]
 
-let stationery = [
+let stationary = [
   {
     "id": "1",
     "type": "moglea",
@@ -63,3 +63,5 @@ let singles = [
     "img": "pic goes here"
   }
 ]
+
+export { singles, stationary, cards }

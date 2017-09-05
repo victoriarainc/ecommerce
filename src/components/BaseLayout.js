@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import NavBar from './NavBar';
+
 export default class BaseLayout extends Component {
   constructor(props) {
     super(props);
@@ -7,8 +9,7 @@ export default class BaseLayout extends Component {
   render() {
     return (
       <div>
-        NavBar
-        Content
+        <NavBar />
         {this.props.children}
       </div>
     );
