@@ -8,9 +8,8 @@
  /*============ GLOBAL ===============*/
 * {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: lowercase;
-  letter-spacing: 6px;
   color: navy;
   /*text-decoration-color: none;*/
 }
@@ -18,14 +17,15 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
   justify-content: center;
   font-family: 'Quicksand', sans-serif;
 
 }
 
 .children {
-  margin: 5% 10%;
+  margin: 5% 0;
+  display: flex;
+  justify-content: center;
 }
 
 /*---- nav bar -----*/
@@ -33,13 +33,13 @@ body {
 .navBar {
   display: flex;
   flex-direction: column;
-  margin: 1% 3%;
+  margin: 1% 0;
   justify-content: space-around;
-  width: 100%;
 }
 
 .HAC {
   background-color: #ccffe9;
+  letter-spacing: 2px;
   line-height: 250%;
   display: flex;
 }
@@ -52,16 +52,29 @@ img {
 .link a {
   color: navy;
   font-size: 25px;
-  letter-spacing: 15px;
-  margin: 2%;
+  margin: 0 1em;
 }
+
+/*----- home ------*/
 
 .categories {
   color: blush;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   margin-top: 2%;
   font-family: 'Lobster', cursive;
+  letter-spacing: normal;
+}
+
+.cat {
+  width: 10em;
+  height: 10em;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 2em;
 }
 
  /*------ children ------*/
