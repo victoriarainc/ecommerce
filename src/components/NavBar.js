@@ -14,7 +14,7 @@ export default class NavBar extends Component {
         <div className="HAC">
           <div className="link"><NavLink to="/">Home</NavLink></div>
           <div className="link"><NavLink to="/about">About</NavLink></div>
-          <div className="link"><NavLink to="/contact">Contact</NavLink></div>
+          <div className="link"><NavLink to="/craft">Craft</NavLink></div>
         </div>
 
       </div>

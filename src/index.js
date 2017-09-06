@@ -7,7 +7,7 @@ import './styles/index.css';
 import App from './components/App';
 import BaseLayout from './components/BaseLayout';
 import About from './components/About';
-import Contact from './components/Contact';
+import Craft from './components/Craft';
 import Cards from './components/Cards';
 import Stationery from './components/Stationery';
 import Singles from './components/Singles';
@@ -19,7 +19,7 @@ ReactDOM.render(
   <BrowserRouter>
     <BaseLayout>
       <Switch>
-        <Route path="/contact" component={Contact} />
+        <Route path="/craft" component={Craft} />
         <Route path="/about" component={About} />
         <Route path="/cards" component={Cards} />
         <Route path="/stationery" component={Stationery} />
