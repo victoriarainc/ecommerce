@@ -91,7 +91,14 @@ img {
   margin: 1em 2em;
 }
 
+/*------- about ---------*/
+
+.about {
+  width: 35em;
+}
+
  /*------ children ------*/
+
 .itemwrapper {
   display: flex;
   margin: 4% 0;

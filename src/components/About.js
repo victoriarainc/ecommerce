@@ -6,7 +6,7 @@ export default class About extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="about">
         <div>
           <h1>about vi</h1>
           <p>Victoria Rain, or Vi, was born and raised in North Carolina
