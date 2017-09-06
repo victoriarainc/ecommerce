@@ -7,9 +7,9 @@ export default class Craft extends Component {
   render() {
     return (
       <div>
-        <div>Facebook - /handmadecardsbyvi</div>
-        <div>Instagram - /handmadebyvi</div>
-        <div>Email - viography.raleigh@gmail.com</div>
+        <div>handlettering</div>
+        <div>typewriter</div>
+        <div>custom envelopes</div>
       </div>
     );
   }
