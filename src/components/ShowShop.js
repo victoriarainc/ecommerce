@@ -25,7 +25,9 @@ export default class ShowShop extends Component {
         if (item.category === category) {
           return (
             <div key={item.id}>
-              {item.id} - {item.category}
+              <img src={item.img} />
+              {item.price}
+              {item.description}
             </div>
           )
         } else {
