@@ -6,12 +6,13 @@ import './styles/index.css';
 
 import App from './components/App';
 import BaseLayout from './components/BaseLayout';
+
 import Shop from './components/Shop'
+import ShowShop from './components/ShowShop';
+
 import About from './components/About';
+
 import Craft from './components/Craft';
-import Cards from './components/Cards';
-import Stationery from './components/Stationery';
-import Singles from './components/Singles';
 import ShowCraft from './components/ShowCraft';
 
 
@@ -24,9 +25,7 @@ ReactDOM.render(
         <Route path="/craft/:id" component={ShowCraft} />
         <Route path="/craft" component={Craft} />
         <Route path="/about" component={About} />
-        <Route path="/cards" component={Cards} />
-        <Route path="/stationery" component={Stationery} />
-        <Route path="/singles" component={Singles} />
+        <Route path="/shop/:id" component={ShowShop} />
         <Route path="/shop" component={Shop} />
         <Route path='/' component={App} />
       </Switch>

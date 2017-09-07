@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import {greetingcards} from '../data';
+import { singles, stationery, greetingcards } from '../data';
 
-export default class Cards extends Component {
+export default class ShowShop extends Component {
   constructor(props) {
     super(props);
   }
     render() {
-      let items = greetingcards.map((item) => {
+      let items = stationery.map((item) => {
         return(
           <div className="itemwrapper">
             <img src={item.img} />
@@ -19,7 +19,7 @@ export default class Cards extends Component {
       })
       return (
         <div>
-          {items}
+        {items}
         </div>
       );
     }
