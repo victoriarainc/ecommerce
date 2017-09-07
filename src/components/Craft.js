@@ -6,10 +6,10 @@ export default class Craft extends Component {
   }
   render() {
     return (
-      <div>
-        <div>handlettering</div>
-        <div>typewriter</div>
-        <div>custom envelopes</div>
+      <div className="categories">
+        <div className="link craft">handlettering</div>
+        <div className="link craft">typewriter</div>
+        <div className="link craft">custom envelopes</div>
       </div>
     );
   }

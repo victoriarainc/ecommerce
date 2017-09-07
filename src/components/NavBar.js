@@ -12,9 +12,9 @@ export default class NavBar extends Component {
       <div className="navBar">
 
         <div className="HAC">
-          <div className="link"><NavLink to="/shop">Shop</NavLink></div>
-          <div className="link"><NavLink to="/about">About</NavLink></div>
-          <div className="link"><NavLink to="/craft">Craft</NavLink></div>
+          <div className="nav"><NavLink to="/shop">Shop</NavLink></div>
+          <div className="nav"><NavLink to="/about">About</NavLink></div>
+          <div className="nav"><NavLink to="/craft">Craft</NavLink></div>
         </div>
 
       </div>

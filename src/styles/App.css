@@ -1,11 +1,8 @@
-.App {
-  text-align: center;
-}
-/*font-family: 'Lobster', cursive;*/
 
 @import url('https://fonts.googleapis.com/css?family=Lobster|Quicksand');
 
  /*============ GLOBAL ===============*/
+
 * {
   text-decoration: none;
   font-size: 25px;
@@ -19,8 +16,12 @@ body {
   padding: 0;
   justify-content: center;
   font-family: 'Quicksand', sans-serif;
-
 }
+
+.App {
+  text-align: center;
+}
+
 
 .children {
   /*margin: 5% 0;*/
@@ -53,7 +54,7 @@ img {
   width: 150px;
 }
 
-.link a {
+.nav a {
   color: navy;
   font-size: 25px;
   margin: 0 1em;
@@ -75,13 +76,15 @@ img {
   color: blush;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 15em;
   margin-top: 2%;
   font-family: 'Lobster', cursive;
-  letter-spacing: normal;
 }
 
-.cat {
+.link {
   width: 10em;
   height: 10em;
   border: 1px solid blue;
@@ -89,23 +92,24 @@ img {
   justify-content: center;
   align-items: center;
   margin: 1em 2em;
+  border: 1px solid blue;
+}
+
+/*------ children ------*/
+
+.itemwrapper {
+ display: flex;
+ margin: 4% 0;
+}
+
+.itemdescription {
+ flex-direction: column;
+ padding: 2%;
+ margin-left: 2%;
 }
 
 /*------- about ---------*/
 
 .about {
   width: 35em;
-}
-
- /*------ children ------*/
-
-.itemwrapper {
-  display: flex;
-  margin: 4% 0;
-}
-
-.itemdescription {
-  flex-direction: column;
-  padding: 2%;
-  margin-left: 2%;
 }
