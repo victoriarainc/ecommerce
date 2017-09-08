@@ -1,4 +1,4 @@
-let data = [
+let product = [
 
   { "category": 'greeting',
     "id": "1",
@@ -101,4 +101,4 @@ let data = [
 
 ]
 
-export {data};
+export {product};

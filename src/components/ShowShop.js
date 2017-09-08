@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { data } from '../data';
+import { product } from '../product';
 
 export default class ShowShop extends Component {
   constructor(props) {
@@ -10,7 +10,7 @@ export default class ShowShop extends Component {
       let match = this.props.match;
       let category = match.params.id;
 
-      let items = data.map((item) => {
+      let items = product.map((item) => {
         if (item.category === category) {
           return (
             <div className="shopResult" key={item.id}>

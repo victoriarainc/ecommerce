@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { data } from '../data';
+import { craft } from '../craft';
 
 export default class ShowPost extends Component {
   constructor(props) {
@@ -11,8 +11,8 @@ export default class ShowPost extends Component {
       let match = this.props.match;
       let service = match.params.id;
 
-      let items = data.map((item) => {
-        if (item.service === service) {
+      let items = craft.map((item) => {
+        if (item.craft === service) {
           return (
             <div className="shopResult" key={item.id}>
               <h1>{item.service}</h1>

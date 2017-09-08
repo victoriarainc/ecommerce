@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/App.css';
 
-import {data} from '../data.js';
+import {product} from '../product.js';
 
 import {NavLink} from 'react-router-dom';
 
@@ -16,7 +16,7 @@ export default class Shop extends Component {
   render() {
 
     let categories = []
-    data.forEach((item) => {
+    product.forEach((item) => {
       if (categories.indexOf(item.category) === -1) {
         categories.push(item.category);
       }

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/App.css';
 
-import {data} from '../data.js';
+import {craft} from '../craft.js';
 
 import {NavLink} from 'react-router-dom';
 
@@ -16,8 +16,8 @@ export default class Craft extends Component {
   render() {
 
     let services = []
-    data.forEach((item) => {
-      if (services.indexOf(item.service) === -1) {
+    craft.forEach((item) => {
+      if (services.indexOf(craft.service) === -1) {
         services.push(item.service);
       }
     });
