@@ -100,3 +100,11 @@ img {
 .about {
   width: 35em;
 }
+
+/*====== MEDIA QUERIES =======*/
+
+@media only screen and (max-width: 750px) {
+  .shop {
+  justify-content: space-around;
+}
+}
