@@ -24,10 +24,12 @@ export default class ShowShop extends Component {
       let items = data.map((item) => {
         if (item.category === category) {
           return (
-            <div key={item.id}>
-              <img src={item.img} />
-              {item.price}
-              {item.description}
+            <div className="shopResult" key={item.id}>
+              <img className="shopImg" src={item.img} />
+              <div className="shopDesc">
+              <p className="cost">{item.price}</p>
+              <p className="desc">{item.description}</p>
+              </div>
             </div>
           )
         } else {
