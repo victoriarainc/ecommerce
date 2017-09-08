@@ -1,5 +1,5 @@
-### ecommerce
-# by Victoria Coleman
+# ecommerce
+### by Victoria Coleman
 
 ## Intro
 
