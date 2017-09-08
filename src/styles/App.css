@@ -22,7 +22,9 @@ body {
 }
 
 .children {
-  padding: 0 10%;
+  padding: 0 5%;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 h1 {
@@ -67,30 +69,22 @@ img {
 
 /*----- shop ------*/
 
-.categories {
-  color: blush;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  height: 15em;
-  margin-top: 2%;
-  font-family: 'Lobster', cursive;
-}
-
 .link {
   width: 10em;
   height: 10em;
   border: 1px solid blue;
   display: flex;
   justify-content: center;
+  margin: 1em 1em;
   align-items: center;
-  margin: 1em 2em;
   border: 1px solid blue;
 }
 
-/*------- show show ---------*/
+.shop {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
 
 .shopResult {
   display: flex;

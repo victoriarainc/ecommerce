@@ -70,6 +70,13 @@ let data = [
     "description": "A2 and A6 sizes available.",
     "img": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/21270971_1298686413573159_3509833774559368329_n.jpg?oh=ac940187ccce2727beadc5217ce93fc8&oe=5A1AFF06"
   }, {
+    "category": 'address labels',
+    "id": "15",
+    "type": "custom",
+    "price": "$2",
+    "description": "Oval. 2 1/2 inches wide. Color options vary.",
+    "img": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/21270971_1298686413573159_3509833774559368329_n.jpg?oh=ac940187ccce2727beadc5217ce93fc8&oe=5A1AFF06"
+  }, {
     "service": 'handlettering',
     "id": "11",
     "type": "custom",

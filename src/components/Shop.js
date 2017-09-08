@@ -24,7 +24,7 @@ export default class Shop extends Component {
 
     let category_links = categories.map((item) => {
       return (
-        <div key={item} className="link shop">
+        <div key={item} className="link">
           <NavLink to={`/shop/${item}`}>{item}</NavLink>
         </div>
       )
@@ -32,7 +32,7 @@ export default class Shop extends Component {
     console.log(category_links);
 
     return (
-      <div>
+      <div className="shop">
         {category_links}
       </div>
     );

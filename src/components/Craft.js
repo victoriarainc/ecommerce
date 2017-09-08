@@ -24,7 +24,7 @@ export default class Craft extends Component {
 
     let service_links = services.map((item) => {
       return (
-        <div key={item} className="link shop">
+        <div key={item} className="link">
           <NavLink to={`/shop/${item}`}>{item}</NavLink>
         </div>
       )
@@ -32,7 +32,7 @@ export default class Craft extends Component {
     console.log(service_links);
 
     return (
-      <div>
+      <div className="shop">
         {service_links}
       </div>
     );
