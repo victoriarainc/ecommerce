@@ -6,17 +6,6 @@ export default class ShowShop extends Component {
     super(props);
   }
     render() {
-      // let items = stationery.map((item) => {
-      //   return(
-      //     <div className="itemwrapper">
-      //       <img src={item.img} />
-      //       <div className="itemdescription">
-      //         <div className="itemprice">{item.price}</div>
-      //         <div>{item.description}</div>
-      //       </div>
-      //     </div>
-      //   )
-      // });
 
       let match = this.props.match;
       let category = match.params.id;

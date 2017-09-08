@@ -1,19 +1,36 @@
+
 import React, { Component } from 'react';
+import { data } from '../data';
 
 export default class ShowPost extends Component {
   constructor(props) {
     super(props);
   }
+    render() {
 
-  render() {
-        return (
-          <div className="post">
-          <h1>Craft Services</h1>
-            {// <h1>{this.state.title}</h1>
-            // <h3>{this.state.description}</h3>
-            // <p>{this.state.gallery}</p>
-            }
-          </div>
-        )
-      }
-}
+      let match = this.props.match;
+      let service = match.params.id;
+
+      let items = data.map((item) => {
+        if (item.service === service) {
+          return (
+            <div className="shopResult" key={item.id}>
+              <img className="shopImg" src={item.img} />
+              <div className="shopDesc">
+              <p className="cost">{item.price}</p>
+              <p className="desc">{item.description}</p>
+              </div>
+            </div>
+          )
+        } else {
+          return null;
+        }
+      })
+
+      return (
+        <div>
+        {items}
+        </div>
+      );
+    }
+  }

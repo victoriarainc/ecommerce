@@ -31,33 +31,10 @@ export default class Shop extends Component {
     });
     console.log(category_links);
 
-    // let items = data.map((item) => {
-    //   return (
-    //     <div className="itemwrapper">
-    //       <img src={item.img}/>
-    //       <div className="itemdescription">
-    //         <div className="itemprice">{item.price}</div>
-    //         <div>{item.description}</div>
-    //       </div>
-    //     </div>
-    //   );
-    // });
-
     return (
       <div>
         {category_links}
       </div>
-// {      <div className="categories">
-//         <div className="link shop">
-//           <NavLink to={`/shop/${cards}`}>Greeting Cards</NavLink>
-//         </div>
-//         <div className="link shop">
-//           <NavLink to={`/shop/${stationery}`}>Stationery</NavLink>
-//         </div>
-//         <div className="link shop">
-//           <NavLink to={`/shop/${singles}`}>Single Letter Pieces</NavLink>
-//         </div>
-//       </div>}
     );
   }
 }
