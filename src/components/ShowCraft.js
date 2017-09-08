@@ -15,6 +15,7 @@ export default class ShowPost extends Component {
         if (item.service === service) {
           return (
             <div className="shopResult" key={item.id}>
+              <h1>{item.service}</h1>
               <img className="shopImg" src={item.img} />
               <div className="shopDesc">
               <p className="cost">{item.price}</p>
