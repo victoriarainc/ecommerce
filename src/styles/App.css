@@ -22,8 +22,9 @@ body {
 }
 
 .children {
-  padding: 0 5%;
+  padding: 2% 5%;
   flex-flow: row wrap;
+  background-color: #88d3d3;
 }
 
 h1 {
@@ -71,12 +72,12 @@ img {
 .link {
   width: 10em;
   height: 10em;
-  border: 1px solid blue;
   display: flex;
   justify-content: center;
   margin: 1em 1em;
   align-items: center;
-  border: 1px solid blue;
+  background: white;
+  box-shadow: 10px 10px 5px grey;
 }
 
 .shop {

@@ -11,15 +11,15 @@ export default class ShowPost extends Component {
       let match = this.props.match;
       let service = match.params.id;
 
-      let items = craft.map((item) => {
-        if (item.craft === service) {
+      let items = craft.map((result) => {
+        if (result.service === service) {
           return (
-            <div className="shopResult" key={item.id}>
-              <h1>{item.service}</h1>
-              <img className="shopImg" src={item.img} />
+            <div className="shopResult" key={result.id}>
+              <h1>{result.service}</h1>
+              <img className="shopImg" src={result.img} />
               <div className="shopDesc">
-              <p className="cost">{item.price}</p>
-              <p className="desc">{item.description}</p>
+              <p className="cost">{result.price}</p>
+              <p className="desc">{result.description}</p>
               </div>
             </div>
           )
