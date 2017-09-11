@@ -89,16 +89,49 @@ img {
 .shopResult {
   display: flex;
   flex-direction: row;
+  margin: 2% 0;
 }
 
 .shopDesc {
   margin-left: 2em;
+  background-color: white;
 }
 
 /*------- about ---------*/
 
 .about {
-  width: 35em;
+  width: 100%;
+}
+
+.aboutDiv {
+  display: flex;
+  padding: 2% 3%;
+}
+
+.aboutBody {
+  padding: 0 2%;
+  width: 60%;
+  margin: 2% 3%;
+  background-color: white;
+}
+
+.aboutImg {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px grey;
+}
+
+#aboutVi {
+  border-radius: 25px 25px 25px 0;
+}
+
+#aboutHandmade {
+  border-radius: 25px 25px 0 25px;
+}
+
+#aboutPatreon {
+  border-radius: 25px 25px 25px 0;
 }
 
 /*====== MEDIA QUERIES =======*/

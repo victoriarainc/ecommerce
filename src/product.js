@@ -76,6 +76,20 @@ let product = [
     "price": "$2",
     "description": "Oval. 2 1/2 inches wide. Color options vary.",
     "img": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/21270971_1298686413573159_3509833774559368329_n.jpg?oh=ac940187ccce2727beadc5217ce93fc8&oe=5A1AFF06"
+  }, {
+    "category": 'party decor',
+    "id": "16",
+    "type": "rosettes",
+    "price": "Price may vary.",
+    "description": "Beautiful and custom rosettes of any size to create the perfect backdrop for any occassion.",
+    "img": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/21270971_1298686413573159_3509833774559368329_n.jpg?oh=ac940187ccce2727beadc5217ce93fc8&oe=5A1AFF06"
+  }, {
+    "category": 'party decor',
+    "id": "17",
+    "type": "banner",
+    "price": "$2",
+    "description": "Office desk sized. Up to 10 flags/characters.",
+    "img": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/21270971_1298686413573159_3509833774559368329_n.jpg?oh=ac940187ccce2727beadc5217ce93fc8&oe=5A1AFF06"
   }
 ]
 
