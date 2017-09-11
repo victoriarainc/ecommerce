@@ -16,16 +16,16 @@ export default class Shop extends Component {
   render() {
 
     let categories = []
-    product.forEach((item) => {
-      if (categories.indexOf(item.category) === -1) {
-        categories.push(item.category);
+    product.forEach((shopItem) => {
+      if (categories.indexOf(shopItem.category) === -1) {
+        categories.push(shopItem.category);
       }
     });
 
-    let category_links = categories.map((item) => {
+    let category_links = categories.map((shopItem) => {
       return (
-        <div key={item} className="link">
-          <NavLink to={`/shop/${item}`}>{item}</NavLink>
+        <div key={shopItem} className="link">
+          <NavLink to={`/shop/${shopItem}`}>{shopItem}</NavLink>
         </div>
       )
     });

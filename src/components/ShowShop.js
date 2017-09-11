@@ -10,14 +10,14 @@ export default class ShowShop extends Component {
       let match = this.props.match;
       let category = match.params.id;
 
-      let items = product.map((item) => {
-        if (item.category === category) {
+      let shopItems = product.map((shopItem) => {
+        if (shopItem.category === category) {
           return (
-            <div className="shopResult" key={item.id}>
-              <img className="shopImg" src={item.img} />
+            <div className="shopResult" key={shopItem.id}>
+              <img className="shopImg" src={shopItem.img} />
               <div className="shopDesc">
-              <p className="cost">{item.price}</p>
-              <p className="desc">{item.description}</p>
+              <p className="cost">{shopItem.price}</p>
+              <p className="desc">{shopItem.description}</p>
               </div>
             </div>
           )
@@ -28,7 +28,7 @@ export default class ShowShop extends Component {
 
       return (
         <div>
-        {items}
+        {shopItems}
         </div>
       );
     }

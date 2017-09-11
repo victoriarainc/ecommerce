@@ -16,16 +16,16 @@ export default class Craft extends Component {
   render() {
 
     let services = []
-    craft.forEach((item) => {
-      if (services.indexOf(craft.service) === -1) {
-        services.push(item.service);
+    craft.forEach((craftItem) => {
+      if (services.indexOf(craftItem.service) === -1) {
+        services.push(craftItem.service);
       }
     });
 
-    let service_links = services.map((item) => {
+    let service_links = services.map((craftItem) => {
       return (
-        <div key={item} className="link">
-          <NavLink to={`/shop/${item}`}>{item}</NavLink>
+        <div key={craftItem} className="link">
+          <NavLink to={`/shop/${craftItem}`}>{craftItem}</NavLink>
         </div>
       )
     });
