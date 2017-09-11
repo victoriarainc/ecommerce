@@ -1,8 +1,8 @@
 
 import React, { Component } from 'react';
-import { craft } from '../craft';
+import { craft } from '../offer.js';
 
-export default class ShowPost extends Component {
+export default class ShowCraft extends Component {
   constructor(props) {
     super(props);
   }
@@ -15,9 +15,9 @@ export default class ShowPost extends Component {
         if (craftItem.service === service) {
           return (
             <div className="shopResult" key={craftItem.id}>
-              <h1>{craftItem.service}</h1>
               <img className="shopImg" src={craftItem.img} />
               <div className="shopDesc">
+              <h1>{craftItem.service}</h1>
               <p className="cost">{craftItem.price}</p>
               <p className="desc">{craftItem.description}</p>
               </div>
@@ -33,5 +33,6 @@ export default class ShowPost extends Component {
         {craftItems}
         </div>
       );
+        console.log(craftItems);
     }
   }

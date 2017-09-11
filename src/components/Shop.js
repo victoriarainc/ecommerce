@@ -19,6 +19,7 @@ export default class Shop extends Component {
     product.forEach((shopItem) => {
       if (categories.indexOf(shopItem.category) === -1) {
         categories.push(shopItem.category);
+        console.log("testing", categories[0].description)
       }
     });
 
