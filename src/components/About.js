@@ -12,8 +12,8 @@ export default class About extends Component {
 
           <div className="aboutBody" id="aboutVi">
             <h1>about vi</h1>
-            <p>Victoria Rain, or Vi, was born and raised in North Carolina
-            with a serious knack for craft!</p>
+            <p>Vi was born and raised in North Carolina, a local Raleigh-ite since 2011, and has
+            a serious knack for craft!</p>
           </div>
         </div>
 
