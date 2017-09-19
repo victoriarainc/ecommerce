@@ -60,11 +60,9 @@ img {
 /*-------- home -------*/
 
 .introImg {
-  background-image: url("https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/21686041_1309955992446201_7507814998148813410_n.jpg?oh=da6959435b77f718fb44f65246a5c81b&oe=5A3B837E");
-  height: 300px;
+  height: 100%;
   width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
+
 }
 
 /*----- shop ------*/
