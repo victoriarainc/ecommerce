@@ -9,6 +9,7 @@ class App extends Component {
       <div className="App home">
       <p>Welcome to</p>
       <h1>Handmade by Vi!</h1>
+      <div className="introImg"></div>
       </div>
     );
   }
