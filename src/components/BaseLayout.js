@@ -13,6 +13,11 @@ export default class BaseLayout extends Component {
         <div className="children">
         {this.props.children}
         </div>
+        <div className="navBar footer">
+          <a href="https://www.patreon.com/victoriarain" target="_blank" className="nav">Patreon</a>
+          <a href="https://www.instagram.com/handmadebyvi/" target="_blank" className="nav">Instagram</a>
+          <a href="https://www.facebook.com/handmadebyvi/" target="_blank" className="nav">Facebook</a>
+        </div>
       </div>
     );
   }
