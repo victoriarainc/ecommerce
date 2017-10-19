@@ -14,13 +14,19 @@ export default class ShowCraft extends Component {
       let craftItems = craft.map((craftItem) => {
         if (craftItem.service === service) {
           return (
-            <div className="shopResult" key={craftItem.id}>
-              <img className="shopImg" src={craftItem.img} />
-              <div className="shopDesc">
-              <h1>{craftItem.service}</h1>
-              <p className="cost">{craftItem.price}</p>
-              <p className="desc">{craftItem.description}</p>
-              </div>
+            <div className="shopWrapper">
+            <div className="shopHeader">
+              {// <img className="shopImg" src={craftItem.img} />
+          }
+            </div>
+              <div className="shopResult" key={craftItem.id}>
+
+                <div className="shopDesc">
+                <h1 className="title">{craftItem.service}</h1>
+                <p className="cost">{craftItem.price}</p>
+                <p className="desc">{craftItem.description}</p>
+                </div>
+                </div>
             </div>
           )
         } else {
