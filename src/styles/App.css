@@ -113,6 +113,7 @@ img {
 .aboutDiv {
   display: flex;
   padding: 2% 3%;
+  justify-content: space-around;
 }
 
 .aboutBody {
@@ -123,8 +124,8 @@ img {
 }
 
 .aboutImg {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   box-shadow: 10px 10px 5px grey;
 }
