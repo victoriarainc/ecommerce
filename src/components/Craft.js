@@ -33,6 +33,7 @@ export default class Craft extends Component {
 
     return (
       <div className="shop">
+        <header className="shopHeader">Custom Services</header>
         {service_links}
       </div>
     );
