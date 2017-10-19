@@ -70,6 +70,13 @@ img {
 
 /*----- shop ------*/
 
+.shopHeader {
+  width: 100%;
+  padding: 2% 5%;
+  font-family: 'Lobster', cursive;
+  font-size: 80px;
+}
+
 .link {
   width: 10em;
   height: 10em;

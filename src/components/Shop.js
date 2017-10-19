@@ -34,6 +34,7 @@ export default class Shop extends Component {
 
     return (
       <div className="shop">
+        <header className="shopHeader">Shop</header>
         {category_links}
       </div>
     );
