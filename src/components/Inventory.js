@@ -10,13 +10,13 @@ export default class Craft extends Component {
     return (
       <div className="inventory">
         <header className="inventoryHeader">Inventory</header>
-        <form className = "addInventory" action="/inventory" method="post">
+        <form className = "addInventory" action="http://localhost:3030/inventory" method="post">
           Title: <input type="text" name="title" />
           Description: <input type="text" name="description" />
           Notes: <input type="text" name="notes" />
           Price: <input type="text" name="price" />
           Materials: <input type="text" name="materials" />
-          <button className = "inventoryButton">Add</button>
+          <input type="submit" />
         </form>
       </div>
     );

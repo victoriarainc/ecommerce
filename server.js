@@ -14,6 +14,10 @@ let url = 'mongodb://localhost:27017/ecommerce';
 // for express
 app.use(express.static('public'));
 
+//for bodyParser
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+
 // ==========ROUTES==============
 app.get('/inventory', (req, res) => {
   Inventory.find({}, (err, items) => {
@@ -22,14 +26,23 @@ app.get('/inventory', (req, res) => {
 });
 
 app.post('/inventory', (req, res) => {
-  let item = new Item(req.body);
-  item.provider = 'local';
+  console.log(req.body);
+
+  let item = new Inventory(req.body);
 
   item.save()
-  // if good...
-    .then(() => res.redirect('/'))
-  // if bad...
+    .then(() => res.redirect('http://localhost:3000/inventory'))
     .catch(err => console.log(err));
+
+  //
+  // let item = new Item(req.body);
+  // item.provider = 'local';
+  //
+  // item.save()
+  // // if good...
+  //   .then(() => res.redirect('/'))
+  // // if bad...
+  //   .catch(err => console.log(err));
 });
 
 //APP
@@ -38,7 +51,7 @@ mongoose.connect(url, (err, connection) => {
     console.log('connected to mongo');
   }
   // ============== LISTEN =================
-  app.listen(3000, function() {
+  app.listen(3030, function() {
     console.log('Your app is running!')
   });
 });
