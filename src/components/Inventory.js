@@ -16,7 +16,7 @@ export default class Craft extends Component {
           Notes: <input type="text" name="notes" />
           Price: <input type="text" name="price" />
           Materials: <input type="text" name="materials" />
-          <input type="submit" />
+          <input type="submit" className="inventoryButton" name="add"/>
         </form>
       </div>
     );
