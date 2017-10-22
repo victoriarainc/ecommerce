@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './styles/index.css';
 
+// ======== ENDPOINTS ==========
+
 import App from './components/App';
 import BaseLayout from './components/BaseLayout';
 
@@ -15,6 +17,8 @@ import About from './components/About';
 import Craft from './components/Craft';
 import ShowCraft from './components/ShowCraft';
 
+import Inventory from './components/Inventory';
+
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -22,6 +26,7 @@ ReactDOM.render(
   <BrowserRouter>
     <BaseLayout>
       <Switch>
+        <Route path="/inventory" component={Inventory} />
         <Route path="/craft/:id" component={ShowCraft} />
         <Route path="/craft" component={Craft} />
         <Route path="/about" component={About} />
