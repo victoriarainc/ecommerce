@@ -8,7 +8,7 @@ export default class Craft extends Component {
 
   render() {
     return (
-      <div className="shop">
+      <div className="inventory">
         <header className="inventoryHeader">Inventory</header>
         <form className = "addInventory" action="/inventory" method="post">
           Title: <input type="text" name="title" />
@@ -16,7 +16,7 @@ export default class Craft extends Component {
           Notes: <input type="text" name="notes" />
           Price: <input type="text" name="price" />
           Materials: <input type="text" name="materials" />
-          <button>Add</button>
+          <button className = "inventoryButton">Add</button>
         </form>
       </div>
     );
