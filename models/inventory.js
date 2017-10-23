@@ -11,6 +11,7 @@ const inventorySchema = new Schema({
   notes: {type: String},
   price: {type: String, required: true},
   materials: {type: Array, required: true, default: []},
+  img: {type: String}
 });
 
 // create a model for a Inventory
